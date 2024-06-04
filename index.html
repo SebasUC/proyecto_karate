@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <nav class="navbar">
+        <button class="hamburger">
+            <img src="assets/hamburger.png">
+        </button>
+
         <ul class="navbar-list">
             <li class="navbar-button"><a class="navbar-link">Inicio</a></li>
             <li class="navbar-button"><a class="navbar-link">Blog</a></li>
@@ -18,6 +22,7 @@
             <li class="navbar-button"><a class="navbar-link">Contacto</a></li>
             <li class="navbar-button"><a class="navbar-link">Acerca de</a></li>
             <li class="navbar-button"><a class="navbar-link">FAQ</a></li>
+            <li class="navbar-button"><a class="navbar-link">Cerrar</a></li>
         </ul>
     </nav>
 
@@ -25,7 +30,7 @@
     </header>
 
     <main class="main">
-        <section class="summary">
+        <section class="summary text-group">
             <h1>Fudoshin</h1>
             <p>
                 Somos una academia de karate estilo <b>Shotokan</b> que forma a sus estudiantes con bases tradicionales
@@ -34,7 +39,48 @@
                 nacionales e internacionales.
             </p>
         </section>
+
+        <section class="card-container">
+            <article class="card">
+                <img class="card-image" src="assets/icons/karate.png">
+                <h2 class="card-title">Karate</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae mollitia
+                    earum
+                    necessitatibus eveniet repellat quae cum assumenda rem delectus repellendus explicabo deserunt.
+                    Aliquam ea, impedit commodi rerum quis esse?</p>
+            </article>
+            <article class="card">
+                <img class="card-image" src="assets/icons/karate.png">
+                <h2 class="card-title">Shotokan</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae mollitia
+                    earum
+                    necessitatibus eveniet repellat quae cum assumenda rem delectus repellendus explicabo deserunt.
+                    Aliquam ea, impedit commodi rerum quis esse?</p>
+            </article>
+            <article class="card">
+                <img class="card-image" src="assets/icons/karate.png">
+                <h2 class="card-title">Kata</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae mollitia
+                    earum
+                    necessitatibus eveniet repellat quae cum assumenda rem delectus repellendus explicabo deserunt.
+                    Aliquam ea, impedit commodi rerum quis esse?</p>
+            </article>
+            <article class="card">
+                <img class="card-image" src="assets/icons/karate.png">
+                <h2 class="card-title">Kumite</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae mollitia
+                    earum
+                    necessitatibus eveniet repellat quae cum assumenda rem delectus repellendus explicabo deserunt.
+                    Aliquam ea, impedit commodi rerum quis esse?</p>
+            </article>
+        </section>
     </main>
+
+    <footer class="footer">
+        <p>Hola</p>
+    </footer>
+
+    <script src="js/navigation.js"></script>
 </body>
 
 </html>

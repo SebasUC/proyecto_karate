@@ -1,0 +1,60 @@
+@import url('styles.css');
+
+.header {
+    position: relative;
+    background: url('../assets/home/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.summary {
+    text-align: center;
+    margin: auto 0;
+}
+
+.card-container {
+    background-color: var(--primary-light-color);
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    .card {
+        padding: 10px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        .card-image {
+            display: inline-block;
+            margin: 0 auto;
+            height: 64px;
+            width: 64px;
+        }
+
+        .card-title, .card-text {
+            text-align: center;
+        }
+    }
+}
+
+
+@media (width >= 796px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            width: 45%;
+        }
+    }
+}
+
+@media (width >= 992px) {
+    .card-container {
+        .card {
+            width: 20%;
+        }
+    }
+}
