@@ -1,5 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Eczar:wght@400..800&display=swap');
+
+:root {
+    --primary-color: #56070c; 
+    --secondary-color: #8f3d38; 
+    --tertiary-color: #350a06; 
+
+    --primary-light-color: white;
+    --secondary-light-color: #e1d9d9;
+    --tertiary-light-color: #f6f1f1;
+
+    --text-font: "Eczar", serif;
+    --title-font: "Caudex", serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    --nav-background: var(--primary-light-color); 
+    --body-background-color: var(--tertiary-light-color);
+
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main"
+    "footer";
+
+    grid-template-rows: 3% 10% auto 10%;
+
+    min-height: 200vh;
+    background-color: var(--body-background-color);
+    
+    font-family: var(--text-font);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--title-font);
+}
+
+p,a {
+    opacity: 0.7;
+}
+
+.navbar {
+    grid-area: nav;
+    position: sticky;
+    z-index: 9999;
+    background-color: var(--nav-background);
+    left: 0;
+    top: 0;
+    animation: test auto linear forwards;
+    animation-timeline: scroll(block root);
+    animation-range: entry 15% cover 50%;
+
+    .navbar-list {
+        height: 100%;
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+        gap: 0.01em;
+        margin-right: 1em;
+
+        .navbar-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: fit-content;
+            text-align: center;
+
+            .navbar-link {
+                font-size: 1.05em;
+                color: var(--primary-color);
+                border-radius: 10px;
+                padding: 8px;
+                transition: font-size 0.4s ease, background-color 0.8s ease;
+                
+                &:hover {
+                    cursor: pointer;
+                    background-color: var(--secondary-light-color);
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+.header {
+    grid-area: header;
+    position: relative;
+    background: url('../assets/home/header.jpg');
+    background-position: 50%;
+    background-size: cover;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+}
+
+.main {
+    grid-area: main;
+    padding: 10px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@keyframes test {
+    0% {
+        background-color: rgb(255 255 255 / 100%);
+    }
+
+    100% {
+        background-color: rgb(255 255 255 / 5%);
+    }
+}
+
+@media (width >= 760px) {
+
+}
+
+@media (width >= 992px) {
+    
 }
