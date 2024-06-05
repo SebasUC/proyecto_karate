@@ -31,7 +31,7 @@ body {
         "main"
         "footer";
 
-    grid-template-rows: 3.5% 20% auto 10%;
+    grid-template-rows: 3.5% 24% auto 10%;
 
     min-height: 100vh;
     background-color: var(--body-background-color);
@@ -187,20 +187,20 @@ a {
 
 @media (min-width:768px) {
     body {
-        grid-template-rows: 6% 30% auto 10%;
+        grid-template-rows: 6% 28% auto 10%;
     }
 }
 
 @media (min-width: 992px) {
     body {
-        grid-template-rows: 6% 40% auto 10%;
+        grid-template-rows: 6% 33% auto 10%;
     }
 
     h1 {
         font-size: 1.8em;
     }
 
-    .text-group {
+    .text {
         max-width: 45%;
         margin: 0 auto;
     }
