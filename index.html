@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fudoshin | Academia</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <nav class="navbar">
+        <button class="hamburger">
+            <img src="assets/hamburger.png">
+        </button>
+
         <ul class="navbar-list">
             <li class="navbar-button"><a class="navbar-link">Inicio</a></li>
             <li class="navbar-button"><a class="navbar-link">Blog</a></li>
@@ -18,6 +22,7 @@
             <li class="navbar-button"><a class="navbar-link">Contacto</a></li>
             <li class="navbar-button"><a class="navbar-link">Acerca de</a></li>
             <li class="navbar-button"><a class="navbar-link">FAQ</a></li>
+            <li class="navbar-button"><a class="navbar-link">Cerrar</a></li>
         </ul>
     </nav>
 
@@ -27,14 +32,73 @@
     <main class="main">
         <section class="summary">
             <h1>Fudoshin</h1>
-            <p>
+            <p class="text">
                 Somos una academia de karate estilo <b>Shotokan</b> que forma a sus estudiantes con bases tradicionales
                 del
                 karate, además de preparar a los atletas en las disciplinas de kata y kumite para competir en torneos
                 nacionales e internacionales.
             </p>
         </section>
+
+        <section class="card-container">
+            <article class="card">
+                <img class="card-image" src="assets/icons/karate.png">
+                <h2 class="card-title">Karate</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae mollitia
+                    earum
+                    necessitatibus eveniet repellat quae cum assumenda rem delectus repellendus explicabo deserunt.
+                    Aliquam ea, impedit commodi rerum quis esse?</p>
+            </article>
+            <article class="card">
+                <img class="card-image" src="assets/icons/karate.png">
+                <h2 class="card-title">Shotokan</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae mollitia
+                    earum
+                    necessitatibus eveniet repellat quae cum assumenda rem delectus repellendus explicabo deserunt.
+                    Aliquam ea, impedit commodi rerum quis esse?</p>
+            </article>
+            <article class="card">
+                <img class="card-image" src="assets/icons/karate.png">
+                <h2 class="card-title">Kata</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae mollitia
+                    earum
+                    necessitatibus eveniet repellat quae cum assumenda rem delectus repellendus explicabo deserunt.
+                    Aliquam ea, impedit commodi rerum quis esse?</p>
+            </article>
+            <article class="card">
+                <img class="card-image" src="assets/icons/karate.png">
+                <h2 class="card-title">Kumite</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, recusandae mollitia
+                    earum
+                    necessitatibus eveniet repellat quae cum assumenda rem delectus repellendus explicabo deserunt.
+                    Aliquam ea, impedit commodi rerum quis esse?</p>
+            </article>
+        </section>
+        <section class="level-container">
+            <h2 class="level-title">Niveles de Cinta</h2>
+            <article class="level-slider-container">
+                <ul class="level-list">
+                    <li class="level-img"><img src="./assets/cintas/1.png" alt="Cinta de karate principiante"></li>
+                    <li class="level-img"><img src="./assets/cintas/2.png" alt="Cinta de karate noveno kyu"></li>
+                    <li class="level-img"><img src="./assets/cintas/3.png" alt="Cinta de karate octavo kyu"></li>
+                    <li class="level-img"><img src="./assets/cintas/4.png" alt="Cinta de karate séptimo kyu"></li>
+                    <li class="level-img"><img src="./assets/cintas/5.png" alt="Cinta de karate sexto kyu"></li>
+                    <li class="level-img"><img src="./assets/cintas/6.png" alt="Cinta de karate quinto kyu"></li>
+                    <li class="level-img"><img src="./assets/cintas/7.png" alt="Cinta de karate cuarto kyu"></li>
+                    <li class="level-img"><img src="./assets/cintas/8.png" alt="Cinta de karate tercer kyu"></li>
+                    <li class="level-img"><img src="./assets/cintas/9.png" alt="Cinta de karate segundo kyu"></li>
+                    <li class="level-img"><img src="./assets/cintas/10.png" alt="Cinta de karate primer kyu"></li>
+                    <li class="level-img"><img src="./assets/cintas/11.png" alt="Cinta de karate shodan"></li>
+                </ul>
+            </article>
+        </section>
     </main>
+
+    <footer class="footer">
+        <p>Hola</p>
+    </footer>
+
+    <script src="js/navigation.js"></script>
 </body>
 
 </html>
