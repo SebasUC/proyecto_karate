@@ -30,7 +30,7 @@ body {
         "main"
         "footer";
 
-    grid-template-rows: auto 24% 1fr 10%;
+    grid-template-rows: auto 35vh 1fr 10%;
 
     min-height: 100vh;
     background: url('../assets/home/background.jpg');
@@ -88,13 +88,13 @@ a {
 @media (min-width:768px) {
 
     body {
-        grid-template-rows: auto 28% 1fr 10%;
+        grid-template-rows: auto 45vh 1fr 10%;
     }
 }
 
 @media (min-width: 992px) {
     body {
-        grid-template-rows: auto 33% 1fr 10%;
+        grid-template-rows: auto 55vh 1fr 10%;
     }
 
     h1 {
