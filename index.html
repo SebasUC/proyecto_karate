@@ -6,31 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fudoshin | Academia</title>
 
+    <script src="components/nav-bar.js"></script>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <button class="hamburger">
-            <img src="assets/hamburger.png">
-        </button>
-
-        <ul class="navbar-list">
-            <li class="navbar-button"><a class="navbar-link">Inicio</a></li>
-            <li class="navbar-button"><a class="navbar-link">Blog</a></li>
-            <li class="navbar-button"><a class="navbar-link">Nosotros</a></li>
-            <li class="navbar-button"><a class="navbar-link">Contacto</a></li>
-            <li class="navbar-button"><a class="navbar-link">Acerca de</a></li>
-            <li class="navbar-button"><a class="navbar-link">FAQ</a></li>
-            <li class="navbar-button"><a class="navbar-link">Cerrar</a></li>
-        </ul>
-    </nav>
+    <div class="nav-wrapper">
+        <nav-bar></nav-bar>
+    </div>
 
     <header class="header">
     </header>
 
     <main class="main">
-        <section class="summary">
+        <section class="summary text-group">
             <h1>Fudoshin</h1>
             <p class="text">
                 Somos una academia de karate estilo <b>Shotokan</b> que forma a sus estudiantes con bases tradicionales
@@ -40,38 +29,46 @@
             </p>
         </section>
 
-        <section class="card-container">
-            <article class="card">
-                <img class="card-image" src="assets/icons/karate.png">
-                <h2 class="card-title">Karate</h2>
-                <p class="card-text">El karate nació en Japón y se expandió por todo el mundo, siendo una de las artes
-                    marciales más practicadas y transmitidas de generación en generación. Nosotros enseñamos karate y
-                    formamos karatecas que cumplen con los requerimientos originales.
-                </p>
-            </article>
-            <article class="card">
-                <img class="card-image" src="assets/icons/karate.png">
-                <h2 class="card-title">Shotokan</h2>
-                <p class="card-text">Actualmente existen muchos estilos de karate; el nuestro es el Shotokan, estilo que
-                    se caracteriza por posiciones flexionadas y bajas. El karate Shotokan fue el primer estilo de
-                    karate-do japonés.
-                </p>
-            </article>
-            <article class="card">
-                <img class="card-image" src="assets/icons/karate.png">
-                <h2 class="card-title">Kata</h2>
-                <p class="card-text">Las bases del karate son las katas. Enseñamos todas y cada una de ellas, de forma
-                    que nuestros karatecas dominen cada técnica a la perfección. Las katas son aprobadas y utilizadas
-                    también en competencias.</p>
-            </article>
-            <article class="card">
-                <img class="card-image" src="assets/icons/karate.png">
-                <h2 class="card-title">Kumite</h2>
-                <p class="card-text">Enseñamos técnicas y estrategias de kumite deportivo, de forma que nuestros
-                    estudiantes están capacitados para pelear en competencias. En nuestro dojo, formamos atletas de
-                    élite.</p>
-            </article>
+        <section class="card-wrapper">
+            <div class="card-container">
+                <article class="card">
+                    <img class="card-image" src="assets/icons/karate.png">
+                    <h2 class="card-title">Karate</h2>
+                    <p class="card-text">El karate nació en Japón y se expandió por todo el mundo, siendo una de las
+                        artes
+                        marciales más practicadas y transmitidas de generación en generación. Nosotros enseñamos karate
+                        y
+                        formamos karatecas que cumplen con los requerimientos originales.
+                    </p>
+                </article>
+                <article class="card">
+                    <img class="card-image" src="assets/icons/karate.png">
+                    <h2 class="card-title">Shotokan</h2>
+                    <p class="card-text">Actualmente existen muchos estilos de karate; el nuestro es el Shotokan, estilo
+                        que
+                        se caracteriza por posiciones flexionadas y bajas. El karate Shotokan fue el primer estilo de
+                        karate-do japonés.
+                    </p>
+                </article>
+                <article class="card">
+                    <img class="card-image" src="assets/icons/karate.png">
+                    <h2 class="card-title">Kata</h2>
+                    <p class="card-text">Las bases del karate son las katas. Enseñamos todas y cada una de ellas, de
+                        forma
+                        que nuestros karatecas dominen cada técnica a la perfección. Las katas son aprobadas y
+                        utilizadas
+                        también en competencias.</p>
+                </article>
+                <article class="card">
+                    <img class="card-image" src="assets/icons/karate.png">
+                    <h2 class="card-title">Kumite</h2>
+                    <p class="card-text">Enseñamos técnicas y estrategias de kumite deportivo, de forma que nuestros
+                        estudiantes están capacitados para pelear en competencias. En nuestro dojo, formamos atletas de
+                        élite.</p>
+                </article>
+            </div>
         </section>
+
         <section class="level-container">
             <h2 class="level-title">Niveles de Cinta</h2>
             <p class="text">
@@ -100,8 +97,6 @@
     <footer class="footer">
         <p>Hola</p>
     </footer>
-
-    <script src="js/navigation.js"></script>
 </body>
 
 </html>

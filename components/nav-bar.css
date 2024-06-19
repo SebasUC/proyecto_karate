@@ -1,0 +1,110 @@
+.navbar {
+    height: 100%;
+    width: 100%;
+    background-color: var(--nav-background);
+    animation: navbar-fade auto linear forwards;
+    animation-timeline: scroll(block root);
+    animation-range: entry 15% cover 50%;
+    display: flex;
+    justify-content: flex-end;
+
+    .burger {
+        background-color: transparent;
+        height: 100%;
+        border: none;
+        display: inline-block;
+
+        & img {
+            height: 80%;
+        }
+    }
+
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        z-index: 1000;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(255 255 255 / 60%);
+        backdrop-filter: blur(6px);
+
+        .navbar-button {
+            height: 5%;
+            width: 100%;
+            text-align: center;
+            font-size: 1.4em;
+            color: var(--primary-color);
+            padding: 0.35em;
+            transition: font-size 0.4s ease, background-color 0.8s ease;
+
+            .navbar-link {
+                text-decoration: none;
+                &:active, &:visited {
+                    color: var(--primary-color);
+                }
+                
+            }
+        }
+    }
+}
+
+@keyframes navbar-fade {
+    0% {
+        background-color: rgb(255 255 255 / 100%);
+    }
+
+    100% {
+        background-color: rgb(255 255 255 / 5%);
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        .burger {
+            display: none;
+        }
+
+        .navbar-list {
+            position: static;
+            display: flex;
+            height: max-content;
+            margin: auto 0;
+            width: auto;
+            flex-direction: row;
+            list-style-type: none;
+            justify-content: flex-end;
+            background-color: transparent;
+            backdrop-filter: none;
+            gap: 0.01em;
+            margin-right: 1em;
+
+            .navbar-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 2em;
+                width: fit-content;
+                text-align: center;
+
+                .navbar-link {
+                    font-size: 0.75em;
+                    padding: 0.35em;
+                    border-radius: 10px;
+                    transition: background-color 0.4s ease, font-size 0.4s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        font-size: 0.95em;
+                        background-color: var(--secondary-light-color);
+                    }
+                }
+
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
