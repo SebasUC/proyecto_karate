@@ -1,5 +1,10 @@
 @import url('styles.css');
 
+:root {
+    --navbar-entry: 15%;
+    --navbar-cover: 50%;
+}
+
 .header {
     position: flex;
     background: url('../assets/home/background.jpg');

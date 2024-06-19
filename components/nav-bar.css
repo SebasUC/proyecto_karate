@@ -4,7 +4,7 @@
     background-color: var(--nav-background);
     animation: navbar-fade auto linear forwards;
     animation-timeline: scroll(block root);
-    animation-range: entry 15% cover 50%;
+    animation-range: entry var(--navbar-entry) cover var(--navbar-cover);
     display: flex;
     justify-content: flex-end;
 
