@@ -62,9 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     ];
     
-    
-    // const openIcon = '&#9650;'
-    // const closedIcon = '&#9660;'
     const openIcon = '<i class="fa-solid fa-arrow-up"></i>'
     const closedIcon = '<i class="fa-solid fa-arrow-down"></i>'
     
