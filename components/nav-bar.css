@@ -4,7 +4,7 @@
     background-color: var(--nav-background);
     animation: navbar-fade auto linear forwards;
     animation-timeline: scroll(block root);
-    animation-range: entry 15% cover 50%;
+    animation-range: entry var(--navbar-entry) cover var(--navbar-cover);
     display: flex;
     justify-content: flex-end;
 
@@ -35,16 +35,12 @@
             width: 100%;
             text-align: center;
             font-size: 1.4em;
-            color: var(--primary-color);
             padding: 0.35em;
             transition: font-size 0.4s ease, background-color 0.8s ease;
 
             .navbar-link {
                 text-decoration: none;
-                &:active, &:visited {
-                    color: var(--primary-color);
-                }
-                
+                color: var(--primary-color);
             }
         }
     }

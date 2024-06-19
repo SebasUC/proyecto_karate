@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
+    <title>Fudoshin | FAQ</title>
+
+    <link href="./resources/fontawesome-free-6.5.2-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="./resources/fontawesome-free-6.5.2-web/css/brands.css" rel="stylesheet" />
+    <link href="./resources/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
 
     <script src="components/nav-bar.js"></script>
     <link rel="stylesheet" href="css/faq.css">
 </head>
+
 <body>
     <div class="nav-wrapper">
         <nav-bar></nav-bar>
     </div>
+    <header class="header">
+        <!-- Se usa un p porque la tipografía de títulos no permite el uso de ¿ -->
+        <p class="header-title">¿Cómo podemos ayudarte?</p>
+        <div class="search-box">
+            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            <input class="search-input" type="text" placeholder="Buscar una pregunta">
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="text-group main-section">
+            <h1 class="faq-title">Preguntas frecuentes</h1>
+
+            <div class="faqList">
+
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <p>Hola</p>
     </footer>
+
+    <script src="./js/faq.js"></script>
 </body>
+
 </html>
