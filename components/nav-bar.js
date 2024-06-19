@@ -15,7 +15,7 @@ template.innerHTML = `
             <li class="navbar-button"><a class="navbar-link">Blog</a></li>
             <li class="navbar-button"><a class="navbar-link">Nosotros</a></li>
             <li class="navbar-button"><a class="navbar-link">Contacto</a></li>
-            <li class="navbar-button"><a class="navbar-link">Acerca de</a></li>
+            <li class="navbar-button"><a class="navbar-link" href="acercaNosotros.html">Acerca de</a></li>
             <li class="navbar-button"><a class="navbar-link" href="faq.html">FAQ</a></li>
             <li class="navbar-button"><a class="navbar-link">Cerrar</a></li>
         </ul>
@@ -41,7 +41,7 @@ class NavBar extends HTMLElement {
             navList.style.display = 'flex';
         }
     }
-    
+
     hideMobileMenu = (e) => {
         const navList = this.shadowRoot.querySelector('.navbar-list');
         if (navList) {
