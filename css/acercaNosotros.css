@@ -4,16 +4,15 @@ body {
     grid-template-areas:
         "nav"
         "main"
-        "contacto"
         "footer";
-    grid-template-rows: 2.5% auto 5% 10%;
+    grid-template-rows: 1.5% auto 8%;
 }
 
 .main {
     justify-content: center;
     align-items: center;
     gap: 1%;
-    margin: 3rem 0;
+    margin: 12rem 0;
 
     .titulo {
         display: flex;
@@ -78,13 +77,12 @@ body {
         grid-template-areas:
             "nav"
             "main"
-            "contacto"
             "footer";
-        grid-template-rows:4% auto 7% 15%;
+        grid-template-rows:3% auto 13%;
     }
 
     .main {
-        margin: 2rem 0;
+        margin: 8rem 0;
 
         .card {
             flex-direction: row;
@@ -112,7 +110,7 @@ body {
             "nav"
             "main"
             "footer";
-        grid-template-rows: 5% auto 20%;
+        grid-template-rows: 3% auto 12%;
     }
     .main {
         margin: 2rem 0;
