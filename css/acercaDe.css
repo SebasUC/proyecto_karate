@@ -11,7 +11,7 @@ body {
 .main {
     justify-content: center;
     align-items: center;
-    gap: 1%;
+    gap: 3%;
     margin: 5rem 0;
 
     .titulo {
@@ -32,22 +32,23 @@ body {
         align-items: center;
         text-align: center;
         margin: 0 5%;
-
-        .card-texto {
-            padding: 5%;
-        }
+        padding: 3%;
 
         .card-img-contenedor {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height: 100%;
+            width: 50%;
+            margin: 10px;
+            overflow: hidden;
+            height: auto;
+            border-radius: 50%;
 
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                transform: scale(1.3);
             }
         }
 
@@ -112,36 +113,31 @@ body {
             "footer";
         grid-template-rows: 4% auto 15%;
     }
+
     .main {
         margin: 2rem 0;
         width: 100%;
+
         .card {
             flex-direction: row;
             overflow: hidden;
-            margin: 0 5%;
 
             .card-texto {
-                width: 50%;
+                width: 70%;
                 padding: 1% 3%;
             }
 
             .card-img-contenedor {
                 overflow: hidden;
-                width: 50%;
+                width: 30%;
+                height: auto;
+                border-radius: 50%;
 
                 img {
-                    transition: transform 0.3s ease;
+                    transform: scale(1.3);
                 }
             }
 
-            &:hover {
-                .card-img-contenedor {
-                    img {
-                        transform: scale(1.1);
-                        /* Aplica el efecto de zoom */
-                    }
-                }
-            }
 
             &:nth-child(odd) {
                 flex-direction: row-reverse;
