@@ -8,6 +8,7 @@
 
     <script src="components/nav-bar.js"></script>
     <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" type="text/css" href="./resources/toastify/toastify.css">
 </head>
 
 <body>
@@ -181,71 +182,93 @@
             </svg>
         </div>
 
-        <section class="container big-font-size align-center">
-            <h1>Nos encantaría ayudarte</h1>
-            <p>Ya sea que desees inscribirte o hacer una consulta estamos
+        <section class="block">
+            <div class="container big-font-size align-center">
+                <h1>Nos encantaría ayudarte</h1>
+                <p>Ya sea que desees inscribirte o hacer una consulta estamos
                 aquí para responder cualquier pregunta.</p>
-        </section>
-        <section class="container contact-us side-colored">
-            <div class="card">
-                <figure>
-                    <svg>
-                        <use href="#judo"></use>
-                    </svg>
-                </figure>
-                <button data-form-id="join-form" class="button contactButton main-button pill-shape">Inscripción</button>
-            </div>
-            <div class="card">
-                <figure>
-                    <svg>
-                        <use href="#call"></use>
-                    </svg>
-                </figure>
-                <button data-form-id="questions-form" class="button contactButton main-button pill-shape">Consultas</button>
-            </div>
-            <div class="card">
-                <figure>
-                    <svg>
-                        <use href="#sponsorship"></use>
-                    </svg>
-                </figure>
-                <button data-form-id="sponsorship-form" class="button contactButton main-button pill-shape">Patrocinio</button>
             </div>
         </section>
 
-        <section class="container forms side-colored align-center">
-            <form id="join-form">
-                <h1>¡Inscríbete ya!</h1>
-                <input type="text" id="name" placeholder="Ingresa tu nombre..." />
-                <input type="email" id="email" placeholder="Ingresa tu correo electrónico..." />
-                <input type="number" id="phone" placeholder="Ingresa tu número telefónico..." />
-                <input type="address" id="address" placeholder="Ingresa tu direción..." />
-                <button type="submit" id="submit" class="button main-button">Enviar</button>
-            </form>
-            <form id="questions-form">
-                <h1>¡Queremos conocer tus dudas!</h1>
-                <input type="text" id="name" placeholder="Ingresa tu nombre..." />
-                <input type="email" id="email" placeholder="Ingresa tu correo electrónico..." />
-                <input type="number" id="phone" placeholder="Ingresa tu número telefónico..." />
-                <input type="address" id="address" placeholder="Ingresa tu direción..." />
-                <textarea id="message" placeholder="Escribe un comentario..." rows="4" cols="50"></textarea>
-                <button type="submit" id="submit" class="button main-button">Enviar</button>
-            </form>
-            <form id="sponsorship-form">
-                <h1>Ofrecer un patrocinio</h1>
-                <input type="text" id="name" placeholder="Ingresa tu nombre..." />
-                <input type="text" id="group-name" placeholder="Ingresa el nombre de tu grupo o empresa..." />
-                <input type="address" id="address" placeholder="Ingresa la direción..." />
-                <input type="email" id="email" placeholder="Ingresa el correo electrónico..." />
-                <input type="number" id="phone" placeholder="Ingresa el número telefónico de contacto..." />
-                <textarea id="message" placeholder="Escribe un comentario..." rows="4" cols="50"></textarea>
-                <button type="submit" id="submit" class="button main-button">Enviar</button>
-            </form>
-        </section>
+        <section class="block contact-block side-colored">
+            <div class="container contact-us">
+                <article class="card">
+                    <figure>
+                        <svg>
+                            <use href="#judo"></use>
+                        </svg>
+                    </figure>
+                    <button data-form-id="join-form" class="button contactButton main-button pill-shape">Inscripción</button>
+                </article>
+                <article class="card">
+                    <figure>
+                        <svg>
+                            <use href="#call"></use>
+                        </svg>
+                    </figure>
+                    <button data-form-id="questions-form" class="button contactButton main-button pill-shape">Consultas</button>
+                </article>
+                <article class="card">
+                    <figure>
+                        <svg>
+                            <use href="#sponsorship"></use>
+                        </svg>
+                    </figure>
+                    <button data-form-id="sponsorship-form" class="button contactButton main-button pill-shape">Patrocinio</button>
+                </article>
+            </div>
 
-        <section class="container social-media big-font-size align-center">
-            <h1>Información de contacto</h1>
-            <p>¿No encuentras lo que buscas? ¡Escríbenos en nuestras redes sociales!</p>
+            <div class="container forms align-center">
+                <form id="join-form" novalidate>
+                    <h1>¡Inscríbete ya!</h1>
+                    <input type="text" id="join-name" name="name" placeholder="Ingresa tu nombre..." required />
+                    <input type="email" id="join-email" name="email" placeholder="Ingresa tu correo electrónico..." required/>
+                    <input type="number" id="join-phone" name="phone" placeholder="Ingresa tu número telefónico..." required min="0" />
+                    <input type="text" id="join-address" name="address" placeholder="Ingresa tu dirección..." required />
+                    <button type="submit" id="join-submit" class="button main-button">Enviar</button>
+                </form>
+            
+                <form id="questions-form" novalidate>
+                    <h1>¡Queremos conocer tus dudas!</h1>
+                    <input type="text" id="questions-name" name="name" placeholder="Ingresa tu nombre..." required />
+                    <input type="email" id="questions-email" name="email" placeholder="Ingresa tu correo electrónico..." required />
+                    <input type="number" id="questions-phone" name="phone" placeholder="Ingresa tu número telefónico..." required min="0" />
+                    <input type="text" id="questions-address" name="address" placeholder="Ingresa tu dirección..." required />
+                    <textarea id="questions-message" name="message" placeholder="Escribe un comentario..." rows="4" cols="50"></textarea>
+                    <button type="submit" id="questions-submit" class="button main-button">Enviar</button>
+                </form>
+            
+                <form id="sponsorship-form" novalidate>
+                    <h1>Ofrecer un patrocinio</h1>
+                    <input type="text" id="sponsorship-name" name="name" placeholder="Ingresa tu nombre..." required />
+                    <input type="text" id="sponsorship-group-name" name="group-name" placeholder="Ingresa el nombre de tu grupo o empresa..." required />
+                    <input type="text" id="sponsorship-address" name="address" placeholder="Ingresa tu dirección..." required />
+                    <input type="email" id="sponsorship-email" name="email" placeholder="Ingresa el correo electrónico..." required />
+                    <input type="number" id="sponsorship-phone" name="phone" placeholder="Ingresa el número telefónico de contacto..." required min="0" />
+                    <textarea id="sponsorship-message" name="message" placeholder="Escribe un comentario..." required rows="4" cols="50"></textarea>
+                    <button type="submit" id="sponsorship-submit" class="button main-button">Enviar</button>
+                </form>
+            </div>
+            
+            
+        </section>        
+
+        <section class="block">
+            <div class="container social-media big-font-size align-center">
+                <h1>Información de contacto</h1>
+                <h4>Si no encuentras lo que buscas...</h4>
+                <p>
+                    <br/>
+                    Teléfono: +506 1234 5678
+                    <br/>
+                    Correo Electrónico: info@fudoshincr.com
+                    <br/>
+                    Facebook: @FudoshinCR
+                    <br/>
+                    Instagram: @FudoshinCR
+                    <br/>
+                </p>
+            </div>
         </section>
     </main>
 
@@ -253,7 +276,9 @@
         <p>Hola</p>
     </footer>
 
-    <script src="./js/contacto/contacto.js"></script>
+    <script type="text/javascript" src="./resources/toastify/toastify.js"></script>
+    <script type="module" src="./js/contacto/scriptContactButtons.js"></script>
+    <script type="module" src="./js/contacto/scriptFormSubmit.js"></script>
 </body>
 
 </html>
