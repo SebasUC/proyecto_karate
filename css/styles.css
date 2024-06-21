@@ -33,11 +33,6 @@ body {
     grid-template-rows: auto 35vh 1fr 10%;
 
     min-height: 100vh;
-    background: url('../assets/home/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 
     font-family: var(--text-font);
 }
