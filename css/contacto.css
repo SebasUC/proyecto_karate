@@ -144,7 +144,7 @@ input, textarea {
 @media (width >= 768px) {
     .contact-us {
         .card {
-            flex: 0 1 50%;
+            flex: 1 0 50%;
             max-width: 480px;
         }
     }
