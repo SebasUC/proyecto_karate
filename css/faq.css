@@ -14,8 +14,9 @@
     flex-direction: column;
 
     .header-title {
+        text-align: center;
         opacity: 1;
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -29,6 +30,7 @@
     padding: 1em;
     border-radius: 50px;
     gap: 0.5em;
+    overflow: hidden;
 
     .search-icon {
         color: grey;
@@ -80,7 +82,7 @@
                 margin-bottom: var(--block-margin);
 
                 &.is-active {
-                    height: 30px;
+                    height: 100px;
                 }
             }
         }
@@ -91,6 +93,12 @@
     :root {
         --navbar-entry: 35vh;
         --navbar-cover: 75vh;
+    }
+
+    .header {
+        .header-title {
+            font-size: 1.8rem;
+        }
     }
 }
 
@@ -103,5 +111,11 @@
 
     .search-box {
         width: 40%;
+    }
+
+    .header {
+        .header-title {
+            font-size: 2rem;
+        }
     }
 }
