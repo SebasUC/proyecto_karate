@@ -1,1 +1,187 @@
 @import url('./styles.css');
+
+:root {
+    --navbar-entry: 0vh;
+    --navbar-cover: 0vh;
+}
+
+body {
+    grid-template-areas: 
+        "nav"
+        "main"
+        "footer"
+        ;
+    grid-template-rows: auto 1fr auto;
+}
+
+.block {
+    width: 100%;
+    max-width: 100%;
+}
+
+.container {
+    --container-padding: 2em;
+
+    width: 100%;
+    max-width: 100%;
+    padding: var(--container-padding);
+    margin: 0 auto;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.big-font-size {
+    font-size: 1.2rem;
+}
+
+.side-colored {
+    background-color: var(--tertiary-light-color);
+}
+
+.contact-us {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 0 1 70%;
+        max-width: 335px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 1em;
+        gap: 1em;
+        box-shadow: 2px 2px 10px #222;
+
+        .button {
+            width: 100%;
+        }
+
+        & svg {
+            max-height: 6em;
+            max-width: 6em;
+        }
+    }
+}
+
+/* Botones y elementos */
+.button {
+    border: none;
+    border-radius: 10px;
+    padding: 0.4em 0.2em;
+    font-size: 1.1rem;
+    color: #fff;
+    font-family: var(--text-font);
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.main-button {
+    background-color: var(--primary-color);
+
+    &:hover {
+        background-color: var(--tertiary-color);
+    }
+}
+
+.pill-shape {
+    border-radius: 50px;
+}
+
+/* Formularios */
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h1 {
+        margin-bottom: 0.5em;
+    }
+}
+
+form {
+    display: none;
+    width: 80%;
+
+    &.is-active {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+input, textarea {
+    padding: 0.6em;
+    font-size: 1.1em;
+    font: var(--text-font);
+    border: solid 2px gray;
+    width: 100%;
+    border-radius: 10px;
+    resize: none;
+    transition: box-shadow 0.3s ease;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+}
+
+.input-error {
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.15);
+
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.35);
+    }
+}
+
+@media (width >= 768px) {
+    .contact-us {
+        .card {
+            flex: 1 0 50%;
+            max-width: 480px;
+        }
+    }
+}
+
+@media (width >= 992px) {
+    .contact-us {
+        .card {
+            flex: 0 1 20%;
+            max-width: 300px;
+        }
+    }
+
+    .container.forms {
+        /* Eliminar padding hasta que se active */
+        padding: 0;
+    }
+    
+    /* Props para cuando se debe ajustar */
+    .contact-block.is-form-active {
+        display: grid;
+        grid-template-areas: 
+            "cards forms";
+        grid-template-columns: 0.45fr 1fr;
+        padding: 0 10%;
+
+        .contact-us {
+            grid-area: cards;
+
+            .card {
+                flex: 0 1 100%;
+            }
+        }
+
+        .container.forms {
+            grid-area: forms;
+            padding: var(--container-padding);
+        }
+    }
+}
