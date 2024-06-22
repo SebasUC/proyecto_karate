@@ -3,6 +3,11 @@
 :root {
     --navbar-entry: 15%;
     --navbar-cover: 50%;
+    background: url('../assets/home/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .header {
