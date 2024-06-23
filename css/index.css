@@ -1,3 +1,4 @@
+@import url('../components/footer.css');
 @import url('styles.css');
 
 :root {
@@ -87,8 +88,7 @@
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
         overflow: hidden;
         width: 80%;
-        max-width: 740px;
-        max-height: 500px;
+        max-width: 600px;
 
         .level-list {
             display: flex;
