@@ -6,7 +6,7 @@
     animation-timeline: scroll(block root);
     animation-range: entry var(--navbar-entry) cover var(--navbar-cover);
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 
     .burger {
         background-color: transparent;

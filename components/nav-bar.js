@@ -6,9 +6,6 @@ template.innerHTML = `
         @import "./components/nav-bar.css";
     </style>
     <nav class="navbar">
-        <picture>
-            <img src="./assets/logoFudoshin.png">
-        </picture>
         <button class="burger">
             <img src="assets/hamburger.png">
         </button>
