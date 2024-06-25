@@ -1,4 +1,5 @@
 @import url('styles.css');
+@import url('../components/footer.css');
 
 body {
     grid-template-areas:
@@ -101,7 +102,7 @@ body {
             "nav"
             "main"
             "footer";
-        grid-template-rows: 8% auto 15%;
+        grid-template-rows: 8% auto 300px;
     }
 
     .main {
