@@ -1,4 +1,5 @@
 @import url('styles.css');
+@import url('../components/footer.css');
 
 body {
     grid-template-areas:
@@ -6,6 +7,11 @@ body {
         "main"
         "footer";
     grid-template-rows: 1.5% auto 8%;
+    background: url('../assets/home/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .main {

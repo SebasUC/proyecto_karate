@@ -6,7 +6,7 @@
     animation-timeline: scroll(block root);
     animation-range: entry var(--navbar-entry) cover var(--navbar-cover);
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
 
     .burger {
         background-color: transparent;
@@ -18,7 +18,15 @@
             height: 80%;
         }
     }
-
+    picture {
+        display: flex;
+        height: 100%;
+        img{
+            width: 150px;
+            height: auto;
+            object-fit: cover;
+    }
+    }
     .navbar-list {
         display: none;
         flex-direction: column;
