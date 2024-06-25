@@ -255,91 +255,34 @@ Sensei Sergio Cambronero y toda la Academia Fudoshin de Karate`
         thumbnail: "./assets/blog/posts/5.png",
         content: [
             {
-                title: "Clasificados a JDN",
-                image: "./assets/blog/articles/article1/1.png",
+                title: "Para el 30 de junio , una gran oportunidad , en el polideportivo de Belén, los esperamos ",
+                image: "./assets/blog/articles/article5/1.png",
                 description: [
                     {
-                        subtitle: "Eliminatoria Juegos Nacionales",
-                        paragraph: "Sigue creciendo nuestra representación de Karate y tenemos más clasificados en sus diferentes categorías: Sub 21, Kumite, Kata, tanto en masculino como en femenino para los próximos Juegos Deportivos Nacionales, Guanacaste 2024."
+                        subtitle: "Anuncio Especial: Seminario con Cristian Peña y Carlota Fernández",
+                        paragraph: "Nos complace anunciar una oportunidad extraordinaria para todos los miembros de nuestra academia. El próximo 30 de junio, tendremos el honor de recibir en nuestro dojo a dos figuras destacadas en el mundo del Karate: Cristian Peña, un renombrado entrenador, y su atleta estrella, Carlota Fernández, campeona mundial."
                     },
                     {
-                        subtitle: "Felicitaciones",
-                        paragraph: 
-`Felicitamos a todos los atletas de Karate Belén por garantizar su
-presencia y competencia con la bandera de Belén para estas justas
-guanacastecas.🤩
-
-Belén, Ciudad Americana del Deporte 2024
-3 de junio
-                    `
+                        subtitle: "Sobre Cristian Peña",
+                        paragraph: "Cristian Peña es conocido por su profundo conocimiento y experiencia en el Karate. Ha entrenado a numerosos atletas de alto nivel y es respetado tanto por su habilidad técnica como por su capacidad para inspirar y motivar a sus alumnos. Su enfoque en la perfección técnica y el desarrollo integral de sus atletas lo convierte en uno de los entrenadores más buscados en el mundo del Karate."
+                    },
+                    {
+                        subtitle: "Sobre Carlota Fernández",
+                        paragraph: "Carlota Fernández, bajo la tutela de Cristian Peña, ha alcanzado la cima del éxito en el Karate. Como campeona mundial, Carlota ha demostrado una y otra vez su dominio del arte marcial, combinando fuerza, precisión y una increíble dedicación. Su presencia en nuestro dojo será una fuente de inspiración para todos nosotros."
                     },
                 ]
             },
             {
-                title: "Copa Ryūko Kai",
-                image: "./assets/blog/articles/article1/2.png",
+                title: "Anuncio Especial: Seminario con el Atleta Venezolano Miguel Galindo",
+                image: "./assets/blog/articles/article5/2.png",
                 description: [
                     {
-                        subtitle: "Copa Ryūko Kai",
-                        paragraph: "Este domingo anterior, 15 de nuestros atletas de Karate Do Belén compitieron en el Torneo Ryuko kai."
+                        subtitle: "Queridos atletas de la Academia Fudoshin de Karate,",
+                        paragraph: "Tenemos el placer de anunciar un evento muy especial para todos los miembros de nuestra academia. El próximo domingo 11 de junio, contaremos con la visita de Miguel Galindo, un atleta venezolano reconocido internacionalmente por su impresionante trayectoria en el Karate."
                     },
                     {
-                        subtitle: "Resultados:",
-                        paragraph: 
-`🔹 Mathias Portillo: 1er lugar Kata
-🔹 Brittany Rodríguez: 1er lugar Kata y 1er lugar Kumite
-🔹 Tomás Quesada: 1er lugar Kata y 1er lugar kumite
-🔹 Luis Viquez: 1er lugar Kata y 2do lugar kumite
-🔹 Sofía Viquez: 2do lugar kata y 1er lugar kumite
-🔹 Sol Lehouiller: 2do lugar kata
-🔹 Ailyn Quesada: 2do lugar Kata y 3er Lugar kumite
-🔹 Mónica Portillo: 2do lugar kata y 2do lugar kumite
-🔹 Cristina Portillo: 2do lugar Kata
-🔹 Emiliano Ramírez: 3er lugar kata y 3er Lugar Kumite
-🔹 Santiago Garcia: 3er lugar kata y 3er Lugar kumite
-🔹 Juan Pablo Lamuraglia: 3er lugar Kumite
-🔹 Emiliano Pachame: 3er lugar Kumite
-🔹 Danna Martínez: 3er lugar Kumite
-🔹 Samira Bustamante: Excelente participación
-                    `
-                    },
-                    {
-                        subtitle: "Medallas:",
-                        paragraph: 
-`Para un total de 🥇 7 medallas de Oro, 🥈 7 medallas de plata y 🥉 8 medallas de Bronce.
-
-Felicitamos a todos los atletas que estuvieron dando su mejor esfuerzo en este torneo y que llevan nuestros colores en cada rincón de nuestro país con gran entusiasmo y honor.
-
-Belén, Ciudad Americana del Deporte 2024
-21 de mayo
-                    `
-                    },
-                ]
-            },
-            {
-                title: "Ranking Nacional FEKOKA",
-                image: "./assets/blog/articles/article1/3.png",
-                description: [
-                    {
-                        subtitle: "Ranking Nacional",
-                        paragraph: "Este fin de semana nuestro Dojo Fudoshin, estuvo presente en el Campeonato Infantil FECOKA y Ranking Nacional, Serie CRC. 🇨🇷"
-                    },
-                    {
-                        subtitle: "Resultados:",
-                        paragraph: 
-`
-Tomás Quesada: 🥇Kata y 🥈 kumite 
-Ailyn Quesada: 🥉 Kata y 🥈 kumite
-Rebeca López: 🥉 Kata 
-Yeilin Monge: 🥉 Kata 🥉
-Nefher Menocal: 🥈Kumite 
-María Fernanda Mendoza: 🥇 Kumite 
-                    
-Felicitamos a todos los atletas del Dojo por presentar nuestros valores en cada torneo y campeonato en los que se presentan, a cada uno de los padres, atletas y a Sensei Sergio Cambronero por su gran trabajo con los atletas.🥋.
-                    
-Belén, Ciudad Americana del Deporte 2024
-29 de abril
-                    `
+                        subtitle: "Sobre Miguel Galindo",
+                        paragraph: "Miguel Galindo es una figura destacada en el mundo del Karate, conocido por su dedicación, habilidad técnica y múltiples títulos en competencias internacionales. Su experiencia y conocimiento del Karate lo convierten en una fuente de inspiración y aprendizaje para todos los practicantes del arte marcial."
                     },
                 ]
             },
@@ -351,91 +294,26 @@ Belén, Ciudad Americana del Deporte 2024
         thumbnail: "./assets/blog/posts/6.png",
         content: [
             {
-                title: "Clasificados a JDN",
-                image: "./assets/blog/articles/article1/1.png",
+                title: "Te ivitamos a que nos acompañes",
+                image: "./assets/blog/articles/article6/1.png",
                 description: [
                     {
-                        subtitle: "Eliminatoria Juegos Nacionales",
-                        paragraph: "Sigue creciendo nuestra representación de Karate y tenemos más clasificados en sus diferentes categorías: Sub 21, Kumite, Kata, tanto en masculino como en femenino para los próximos Juegos Deportivos Nacionales, Guanacaste 2024."
-                    },
-                    {
-                        subtitle: "Felicitaciones",
-                        paragraph: 
-`Felicitamos a todos los atletas de Karate Belén por garantizar su
-presencia y competencia con la bandera de Belén para estas justas
-guanacastecas.🤩
-
-Belén, Ciudad Americana del Deporte 2024
-3 de junio
-                    `
+                        subtitle: "Esta semana",
+                        paragraph: "Esta semana, nuestras sesiones de ejercicios funcionales han sido diseñadas para mejorar la fuerza, la agilidad, la resistencia y la coordinación de nuestros atletas. Cada sesión ha sido cuidadosamente planificada para ofrecer un entrenamiento integral y efectivo, adecuado para todos los niveles."
                     },
                 ]
             },
             {
-                title: "Copa Ryūko Kai",
-                image: "./assets/blog/articles/article1/2.png",
+                title: "¡Únete a Nuestras Sesiones de Ejercicios Funcionales en la Academia Fudoshin de Karate!",
+                image: "./assets/blog/articles/article6/2.png",
                 description: [
                     {
-                        subtitle: "Copa Ryūko Kai",
-                        paragraph: "Este domingo anterior, 15 de nuestros atletas de Karate Do Belén compitieron en el Torneo Ryuko kai."
+                        subtitle: "sesiones de ejercicios funcionales en la Academia Fudoshin de Karate.",
+                        paragraph: "¿Estás buscando una manera efectiva de mejorar tu condición física, aumentar tu fuerza y resistencia, y llevar tus habilidades de Karate al siguiente nivel? ¡Tenemos la solución perfecta para ti! Te invitamos a unirte a nuestras dinámicas y completas sesiones de ejercicios funcionales en la Academia Fudoshin de Karate."
                     },
                     {
-                        subtitle: "Resultados:",
-                        paragraph: 
-`🔹 Mathias Portillo: 1er lugar Kata
-🔹 Brittany Rodríguez: 1er lugar Kata y 1er lugar Kumite
-🔹 Tomás Quesada: 1er lugar Kata y 1er lugar kumite
-🔹 Luis Viquez: 1er lugar Kata y 2do lugar kumite
-🔹 Sofía Viquez: 2do lugar kata y 1er lugar kumite
-🔹 Sol Lehouiller: 2do lugar kata
-🔹 Ailyn Quesada: 2do lugar Kata y 3er Lugar kumite
-🔹 Mónica Portillo: 2do lugar kata y 2do lugar kumite
-🔹 Cristina Portillo: 2do lugar Kata
-🔹 Emiliano Ramírez: 3er lugar kata y 3er Lugar Kumite
-🔹 Santiago Garcia: 3er lugar kata y 3er Lugar kumite
-🔹 Juan Pablo Lamuraglia: 3er lugar Kumite
-🔹 Emiliano Pachame: 3er lugar Kumite
-🔹 Danna Martínez: 3er lugar Kumite
-🔹 Samira Bustamante: Excelente participación
-                    `
-                    },
-                    {
-                        subtitle: "Medallas:",
-                        paragraph: 
-`Para un total de 🥇 7 medallas de Oro, 🥈 7 medallas de plata y 🥉 8 medallas de Bronce.
-
-Felicitamos a todos los atletas que estuvieron dando su mejor esfuerzo en este torneo y que llevan nuestros colores en cada rincón de nuestro país con gran entusiasmo y honor.
-
-Belén, Ciudad Americana del Deporte 2024
-21 de mayo
-                    `
-                    },
-                ]
-            },
-            {
-                title: "Ranking Nacional FEKOKA",
-                image: "./assets/blog/articles/article1/3.png",
-                description: [
-                    {
-                        subtitle: "Ranking Nacional",
-                        paragraph: "Este fin de semana nuestro Dojo Fudoshin, estuvo presente en el Campeonato Infantil FECOKA y Ranking Nacional, Serie CRC. 🇨🇷"
-                    },
-                    {
-                        subtitle: "Resultados:",
-                        paragraph: 
-`
-Tomás Quesada: 🥇Kata y 🥈 kumite 
-Ailyn Quesada: 🥉 Kata y 🥈 kumite
-Rebeca López: 🥉 Kata 
-Yeilin Monge: 🥉 Kata 🥉
-Nefher Menocal: 🥈Kumite 
-María Fernanda Mendoza: 🥇 Kumite 
-                    
-Felicitamos a todos los atletas del Dojo por presentar nuestros valores en cada torneo y campeonato en los que se presentan, a cada uno de los padres, atletas y a Sensei Sergio Cambronero por su gran trabajo con los atletas.🥋.
-                    
-Belén, Ciudad Americana del Deporte 2024
-29 de abril
-                    `
+                        subtitle: "¿Qué son los Ejercicios Funcionales?",
+                        paragraph: "Los ejercicios funcionales son entrenamientos diseñados para mejorar tu rendimiento en actividades diarias y deportivas. Estos ejercicios se centran en movimientos naturales del cuerpo, como empujar, tirar, agacharse, girar y correr, ayudando a fortalecer tu núcleo, mejorar tu equilibrio y aumentar tu agilidad."
                     },
                 ]
             },
