@@ -1,6 +1,6 @@
 const services = [
     {
-        name: 'Patrocinios para competencias nacionales en Kumite',
+        name: 'Patrocinios en Kumite',
         description: 'Apoyamos a nuestros atletas en competencias nacionales de Kumite, brindándoles los recursos necesarios para alcanzar el éxito.',
         img: './assets/carousel/1.jpg'
     },
@@ -25,7 +25,7 @@ const services = [
         img: './assets/carousel/1.jpg'
     },
     {
-        name: 'Patrocinio para competencias nacionales en Kata',
+        name: 'Patrocinios en Kata',
         description: 'Impulsamos a nuestros competidores en Kata con patrocinio para participar en eventos nacionales y destacar en cada presentación.',
         img: './assets/carousel/3.png'
     },

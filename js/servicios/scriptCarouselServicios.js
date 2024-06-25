@@ -30,12 +30,18 @@ function createItems() {
 }
 
 function slide(items) {
-    var slideLength = items.length, 
-        first = items[0], 
+    var {
+        visibleSlides, 
+        firstSlidePosition, 
+        lastSlidePosition,
+        slideSize,
+        slideLength
+    } = calculateSizes()
+
+    var first = items[0], 
         last = items[slideLength - 1],
         firstClone = first.cloneNode(true),
         lastClone = last.cloneNode(true),
-        slideSize = items[0].offsetWidth
         index = 0,
         allowShifting = true
     
@@ -51,10 +57,40 @@ function slide(items) {
     prev.addEventListener('click', () => shiftSlide(-1))
     next.addEventListener('click', () => shiftSlide(1))
 
+    window.addEventListener('resize', calculateSizes)
     carouselInner.addEventListener('transitionend', checkIndex)
 
     // Actualizar texto
     updateText(index)
+
+    function calculateSizes() {
+        let visibleSlides, 
+            firstSlidePosition, 
+            lastSlidePosition,
+            slideSize = 250, // 250px de ancho
+            slideLength = items.length
+
+        if (window.matchMedia('(max-width: 800px)').matches) {
+            // Móvil
+            visibleSlides = 1
+            carouselInner.style.left = `-${slideSize}px`
+
+            firstSlidePosition = -1 * slideSize
+            lastSlidePosition = -1 * slideSize * slideLength
+        } else {
+            // Tablet y PC
+            visibleSlides = 3
+            carouselInner.style.left = '0px'
+            
+            firstSlidePosition = 0
+            // El útlimo slide se encuentra en la penúltima posición (la última muestra la copia del primer elemento)
+            lastSlidePosition = -1 * slideSize * (slideLength - 1)
+        }
+
+        carousel.style.width = `${visibleSlides * slideSize}px`
+
+        return { visibleSlides, firstSlidePosition, lastSlidePosition, slideSize, slideLength }
+    }
 
     function shiftSlide(direction) {
         carouselInner.classList.add('shifting')
@@ -83,11 +119,11 @@ function slide(items) {
         if (index == -1) {
             // Colocar en el último slide
             // carouselInner.style.left = -(slideSize * slideLength) + 'px'
-            carouselInner.style.left = -(slideSize * (slideLength - 1)) + 'px'
+            carouselInner.style.left =  lastSlidePosition + 'px'
             index = slideLength - 1
         } else if (index == slideLength) {
             // carouselInner.style.left = -(slideSize) + 'px'
-            carouselInner.style.left = '0px'
+            carouselInner.style.left = firstSlidePosition + 'px'
             index = 0
         }
 
@@ -97,7 +133,7 @@ function slide(items) {
     }
 
     function animateContentWrapper(index) {
-        itemContent.scrollIntoView({ behavior: 'smooth' })
+        // itemContent.scrollIntoView({ behavior: 'smooth' })
         itemContent.style.transition = 'opacity 0.2s ease-out'
         itemContent.style.opacity = 0
 

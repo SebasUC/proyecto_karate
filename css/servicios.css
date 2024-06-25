@@ -3,7 +3,10 @@
 
 :root {
     --slide-width: 250px;
-    --slide-height: 400px
+    --slide-height: 400px;
+    /* Colocar en 200% para no desaparecer el nav en esta página */
+    --navbar-entry: 200%;
+    --navbar-cover: 200%;
 }
 
 body {
@@ -15,6 +18,68 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+/* Productos */
+.product-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em;
+    margin-bottom: 0.5em;
+
+    &:nth-child(odd) {    
+        background-color: #000;
+        color: #fff;
+    }
+    
+    &:nth-child(even) {
+        background-color: #0c0b0b;
+        color: #fff;
+
+        & .button {
+            max-width: 200px;
+        }
+    }
+}
+
+.product-figure {
+    display: flex;
+    justify-content: center;
+
+    & img {
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+        
+        animation-timeline: --image;
+        animation-name: show;
+        animation-range: entry 50% cover 80%;
+        animation-fill-mode: both;
+
+        mask-image: linear-gradient(#000 85%, #0000 100%);
+        /* transition: filter .35s, opacity .85s; */
+        max-width: 100%;
+        height: auto;
+
+        &.visible {
+            
+            cursor: pointer;
+        }
+    }
+}
+
+@keyframes show {
+    from {
+        filter: grayscale();
+        opacity: .4;
+    }
+
+    to {
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+}
+
+/* Carousel */
 .carousel-block {
     display: flex;
     flex-direction: column;
@@ -32,7 +97,6 @@ body {
 .carousel {
     position: relative;
     overflow: hidden;
-    width: calc(3 * var(--slide-width));
     height: var(--slide-height);
 }
 
@@ -44,7 +108,7 @@ body {
     width: 10000px;
 
     &.shifting {
-        transition: left 0.15s ease-out;
+        transition: left 0.2s ease-out;
     }
 }
 
@@ -72,7 +136,7 @@ body {
     margin-top: -20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 2;
-  }
+}
 
 .prev,
 .next {
