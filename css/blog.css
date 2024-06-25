@@ -14,7 +14,7 @@ body{
     justify-content: center;
     flex-direction: row;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 10% auto;
     gap: 10px;
     a{
         text-decoration: none;
@@ -58,6 +58,8 @@ body{
 }
 
 @media(min-width:992px){
-    
+    .main{
+        margin: 5% auto;
+    }
 
 }

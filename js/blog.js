@@ -23,7 +23,7 @@ function loadBlogPosts() {
         articleElement.innerHTML = `
             <img src="${article.thumbnail}" alt="Imagen de ${article.title}">
             <h2>${article.title}</h2>
-            <p>${article.content[0].description.substring(0, 100)}...</p>
+            <p>${article.content[0].description[0].paragraph.substring(0, 100)}...</p>
         `;
 
         articleLink.appendChild(articleElement);
