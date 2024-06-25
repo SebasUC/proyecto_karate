@@ -15,31 +15,37 @@ body{
     max-width: 1400px;
     margin: 0 auto;
     gap: 10px;
-    .post{
-        display: flex;
-        flex-direction: column;
-
-        max-width: 500px;
-        height: 220px;
-        margin: 10px;
-        border-radius: 15px;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-        padding: 10px;
-        transition: background-color 0.3s ease;
-        img{
-            width: 90px;
-            filter: drop-shadow(7px 6px 3px rgba(0,0,0,0.2));
-        }
-        p{
-            font-size: 0.9em;
-        }
-        &:hover{
-            background-color: #ffdede;
-        }
-        &:active{
-            background-color: #ffdede;
+    a{
+        text-decoration: none;
+        color: inherit;
+        opacity: 10;
+        .post{
+            display: flex;
+            flex-direction: column;
+    
+            max-width: 500px;
+            height: 220px;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+            img{
+                width: 90px;
+                filter: drop-shadow(7px 6px 3px rgba(0,0,0,0.2));
+            }
+            p{
+                font-size: 0.9em;
+            }
+            &:hover{
+                background-color: #ffdede;
+            }
+            &:active{
+                background-color: #ffdede;
+            }
         }
     }
+    
 }
 
 @media(min-width:768px){
