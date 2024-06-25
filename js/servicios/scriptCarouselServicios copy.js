@@ -13,14 +13,10 @@ function createItems() {
         const service = services[i]
         const item = document.createElement('article')
         item.classList.add('carousel-item')
-
-        const p = document.createElement('p')
-        p.innerText = i
     
         const img = document.createElement('img')
         img.src = service.img
     
-        item.appendChild(p)
         item.appendChild(img)
         carouselInner.appendChild(item)
         items.push(item)
@@ -38,9 +34,6 @@ function slide(items) {
         slideSize = items[0].offsetWidth
         index = 0,
         allowShifting = true
-    
-    firstClone.classList.add('clone')
-    lastClone.classList.add('clone')
     
     // Agregar el clón del último como primero
     carouselInner.insertBefore(lastClone, first)
@@ -82,12 +75,10 @@ function slide(items) {
         // Si se mueve hacia atrás del inicio
         if (index == -1) {
             // Colocar en el último slide
-            // carouselInner.style.left = -(slideSize * slideLength) + 'px'
-            carouselInner.style.left = -(slideSize * (slideLength - 1)) + 'px'
+            carouselInner.style.left = -(slideSize * slideLength) + 'px'
             index = slideLength - 1
         } else if (index == slideLength) {
-            // carouselInner.style.left = -(slideSize) + 'px'
-            carouselInner.style.left = '0px'
+            carouselInner.style.left = -(slideSize) + 'px'
             index = 0
         }
 
