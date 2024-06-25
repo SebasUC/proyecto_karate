@@ -30,7 +30,7 @@ body {
         "main"
         "footer";
 
-    grid-template-rows: auto 35vh 1fr 10%;
+    grid-template-rows: auto 35vh 1fr 14%;
 
     min-height: 100vh;
 
@@ -83,13 +83,13 @@ a {
 @media (min-width:768px) {
 
     body {
-        grid-template-rows: auto 45vh 1fr 10%;
+        grid-template-rows: auto 45vh 1fr 15%;
     }
 }
 
 @media (min-width: 992px) {
     body {
-        grid-template-rows: auto 55vh 1fr 10%;
+        grid-template-rows: auto 55vh 1fr 300px;
     }
 
     h1 {

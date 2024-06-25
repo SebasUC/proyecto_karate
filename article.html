@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fudoshin | Blog</title>
-
+    <title>Artículo</title>
     <script src="components/nav-bar.js"></script>
-    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/article.css">
 </head>
-
 <body>
     <div class="nav-wrapper">
         <nav-bar></nav-bar>
     </div>
     <header class="header">
-        <h1>blog</h1>
-        <p>Bienvenido al blog Fudoshin</p>
+        <h1 id="article-title"></h1>
     </header>
-    <main id="blog-posts" class="main">
-        
+    <main class="main">
+        <div id="article-content">
+            
+        </div>
+        <aside class="aside">
+            <h2>También te podría interesar...</h2>
+            <nav class="aside-nav">
+                <a class="aside-nav-a" href="article.html?id=1">Competencias recientes</a>
+                <a class="aside-nav-a" href="article.html?id=2">Examenes de cinta</a>
+                <a class="aside-nav-a" href="article.html?id=3">Entrenamientos</a>
+                <a class="aside-nav-a" href="article.html?id=4">Selección Nacional</a>
+                <a class="aside-nav-a" href="article.html?id=5">Seminarios</a>
+                <a class="aside-nav-a" href="article.html?id=6">Ejercicios Funcionales</a>
+            </nav>
+        </aside>
     </main>
-
     <footer class="footer">
         <div class="contenedor-redes">
             <a href="" target="_blank" class="socialContainer containerOne">
@@ -46,8 +54,8 @@
             <a href="./faq.html"><h3>FAQ</h3></a>
         </div>
     </footer>
-    <script src="./js/articles.js"></script>
-    <script src="./js/blog.js"></script>
-</body>
 
+    <script src="js/articles.js"></script>
+    <script src="js/blog.js"></script>
+</body>
 </html>

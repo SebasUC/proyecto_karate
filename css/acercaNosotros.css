@@ -1,19 +1,24 @@
 @import url('styles.css');
+@import url('../components/footer.css');
 
 body {
     grid-template-areas:
         "nav"
         "main"
-        "contacto"
         "footer";
-    grid-template-rows: 1.5% auto 5% 5%;
+    grid-template-rows: 1.5% auto 8%;
+    background: url('../assets/home/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .main {
     justify-content: center;
     align-items: center;
     gap: 1%;
-    margin: 10rem 0;
+    margin: 12rem 0;
 
     .titulo {
         display: flex;
@@ -78,13 +83,12 @@ body {
         grid-template-areas:
             "nav"
             "main"
-            "contacto"
             "footer";
-        grid-template-rows: 2.5% auto 7% 7%;
+        grid-template-rows:3% auto 13%;
     }
 
     .main {
-        margin: 6rem 0;
+        margin: 8rem 0;
 
         .card {
             flex-direction: row;
@@ -112,11 +116,11 @@ body {
             "nav"
             "main"
             "footer";
-        grid-template-rows: 3% auto 7%;
+        grid-template-rows: 3% auto 12%;
     }
     .main {
         margin: 2rem 0;
-        width: 80%;
+        width: 100%;
         .card {
             flex-direction: row;
             overflow: hidden;
@@ -140,7 +144,6 @@ body {
                 .card-img-contenedor {
                     img {
                         transform: scale(1.1);
-                        /* Aplica el efecto de zoom */
                     }
                 }
             }
@@ -150,17 +153,5 @@ body {
             }
         }
 
-    }
-    .card-contacto{
-        position: fixed;
-        right: 0;
-        top: 0;
-        height: 100%;
-        width: 20%; 
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-        box-sizing: border-box; 
-    }
-    .footer{
-        z-index: 1;
     }
 }
