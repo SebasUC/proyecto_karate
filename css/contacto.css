@@ -1,4 +1,5 @@
 @import url('./styles.css');
+@import url('./common.css');
 
 :root {
     --navbar-entry: 0vh;
@@ -12,32 +13,6 @@ body {
         "footer"
         ;
     grid-template-rows: auto 1fr auto;
-}
-
-.block {
-    width: 100%;
-    max-width: 100%;
-}
-
-.container {
-    --container-padding: 2em;
-
-    width: 100%;
-    max-width: 100%;
-    padding: var(--container-padding);
-    margin: 0 auto;
-}
-
-.align-center {
-    text-align: center;
-}
-
-.big-font-size {
-    font-size: 1.2rem;
-}
-
-.side-colored {
-    background-color: var(--tertiary-light-color);
 }
 
 .contact-us {
@@ -69,30 +44,6 @@ body {
             max-width: 6em;
         }
     }
-}
-
-/* Botones y elementos */
-.button {
-    border: none;
-    border-radius: 10px;
-    padding: 0.4em 0.2em;
-    font-size: 1.1rem;
-    color: #fff;
-    font-family: var(--text-font);
-    transition: background-color 0.5s;
-    cursor: pointer;
-}
-
-.main-button {
-    background-color: var(--primary-color);
-
-    &:hover {
-        background-color: var(--tertiary-color);
-    }
-}
-
-.pill-shape {
-    border-radius: 50px;
 }
 
 /* Formularios */
