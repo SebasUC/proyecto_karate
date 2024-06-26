@@ -22,7 +22,7 @@ function loadProduct(productId) {
               { width, height } = calculateCarouselSize()
         
         productHeader.innerHTML = `
-            <h3>${product.title}</h3>
+            <h2>${product.title}</h2>
             <p>${product.description}</p>
         `
 
@@ -33,7 +33,7 @@ function loadProduct(productId) {
             { name: 'Marca', value: product.brand || 'Sin especificar' }
         ]
         
-        productDetails.innerHTML = '<h4>Detalles</h3>'
+        productDetails.innerHTML = '<hr/> <h3>Detalles</h3>'
         details.forEach(detail => {
             const item = document.createElement('div')
             item.innerHTML = `
@@ -42,11 +42,12 @@ function loadProduct(productId) {
 
             productDetails.appendChild(item)
         })
+        productDetails.appendChild(document.createElement('hr'))
 
 
         priceTag.innerText += `${product.price}`
 
-        productInfo.innerHTML = '<h4>Información del Producto</h3>'
+        productInfo.innerHTML = '<h3>Información del Producto</h3>'
         product.info.forEach(text => {
 
             const item = document.createElement('p')
@@ -54,8 +55,9 @@ function loadProduct(productId) {
 
             productInfo.appendChild(item)
         });
+        productInfo.appendChild(document.createElement('hr'))
 
-        productDescription.innerHTML = '<h4>Especificaciones</h3>'
+        productDescription.innerHTML = '<h3>Especificaciones</h3>'
         product.about.forEach(element => {
             const text = element.text
 
@@ -64,6 +66,7 @@ function loadProduct(productId) {
 
             productDescription.appendChild(item)
         });
+        productDescription.appendChild(document.createElement('hr'))
 
         // Cargar carousel
         console.log(width)
@@ -100,7 +103,7 @@ function loadProduct(productId) {
                 width = 250
                 height = 250
             } else {
-                height = 600
+                height = 400
                 width = headerWidth * 0.8
             }
 

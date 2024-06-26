@@ -19,10 +19,14 @@ body {
 
 hr {
     width: 100%;
+    margin: 0.8em 0;
 }
 
 .product-header {
     padding: 1em;
+}
+.product-pictures {
+    margin: 0 auto;
 }
 
 .product-details {
@@ -46,7 +50,7 @@ hr {
     max-width: 100%;
     width: 100%;
     padding: 1em;
-    gap: 0.5em;
+    gap: 1em;
 }
 
 @media (width >= 992px) {
