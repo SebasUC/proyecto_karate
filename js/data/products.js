@@ -31,31 +31,31 @@ const products = [
     },
     {
         id: 2,
-        title: 'Bucal para Karate',
-        description: 'Bucal de grado médico para protección dental, adecuado para niños y adultos.',
-        price: 5000,
-        age: 'Niños y adultos',
-        size: 'Única',
-        additionalInfo: 'Incluye estuche protector.',
+        title: 'Kategui para Kumite',
+        description: 'Kategui ligero y resistente para kumite, diseñado para máxima movilidad y confort.',
+        price: 34000,
+        age: 'Adultos',
+        size: 'Mediano',
+        brand: 'Adidas',
+        additionalInfo: 'Diseñado para alta movilidad.',
         pictures: [
-            './assets/productos/2/1.png',
-            './assets/productos/2/2.png',
-            './assets/productos/2/3.png'
+            './assets/productos/5/1.jpg',
+            './assets/productos/5/2.jpg'
         ],
         info: [
-            'El bucal para karate está diseñado para proteger los dientes y la mandíbula de los practicantes durante las sesiones de combate. Su fabricación con material de grado médico garantiza una excelente absorción de impactos y comodidad durante su uso.',
-            'Es adecuado para niños y adultos, adaptándose fácilmente a la forma de la boca para asegurar un ajuste cómodo y seguro. Este bucal es indispensable para prevenir lesiones dentales durante los entrenamientos y competiciones.',
-            'Además, incluye un estuche protector que permite almacenar el bucal de manera higiénica y segura cuando no está en uso, garantizando su durabilidad y limpieza.'
+            'El kategui para kumite está diseñado para ofrecer la máxima movilidad y confort durante los combates. Fabricado con materiales ligeros y resistentes, permite una gran libertad de movimiento y ventilación.',
+            'Es ideal para adultos que participan en competiciones y entrenamientos intensivos, proporcionando un ajuste seguro y cómodo. La tela ligera asegura que el usuario se mantenga fresco y seco durante la práctica.',
+            'Este kategui combina durabilidad y funcionalidad, siendo la opción perfecta para los practicantes de kumite que buscan rendimiento y comodidad en cada entrenamiento o competencia.'
         ],
         about: [
             {
-                text: 'El bucal para karate está diseñado para proteger los dientes y la mandíbula durante los combates. Fabricado con material de grado médico, ofrece una excelente absorción de impactos.'
+                text: 'El kategui para kumite está diseñado para ofrecer la máxima movilidad y confort durante los combates. Fabricado con materiales ligeros y resistentes, permite una gran libertad de movimiento y ventilación.'
             },
             {
-                text: 'Es adecuado para niños y adultos, y se adapta fácilmente a la forma de la boca para un ajuste cómodo y seguro.'
+                text: 'Es ideal para adultos que participan en competiciones y entrenamientos intensivos, proporcionando un ajuste seguro y cómodo.'
             },
             {
-                text: 'El bucal viene con un estuche protector que permite guardarlo de manera higiénica y segura cuando no está en uso.'
+                text: 'El diseño permite una excelente transpirabilidad, manteniendo al practicante fresco y seco durante la práctica.'
             }
         ]
     },
@@ -68,9 +68,15 @@ const products = [
         size: 'Medio',
         additionalInfo: 'Material resistente y acolchado.',
         pictures: [
-            './assets/productos/3/1.png',
-            './assets/productos/3/2.png',
-            './assets/productos/3/3.png'
+            './assets/productos/3/1.webp',
+            './assets/productos/3/2.webp',
+            './assets/productos/3/3.webp',
+            './assets/productos/3/4.webp',
+            './assets/productos/3/5.webp',
+            './assets/productos/3/6.webp',
+            './assets/productos/3/7.webp',
+            './assets/productos/3/8.webp',
+            './assets/productos/3/9.webp'
         ],
         info: [
             'Las espinilleras para karate están diseñadas para brindar protección y comodidad durante los entrenamientos y competencias. Están fabricadas con materiales resistentes que absorben los impactos y protegen las espinillas de posibles lesiones.',
@@ -91,16 +97,50 @@ const products = [
     },
     {
         id: 4,
+        title: 'Bucal para Karate',
+        description: 'Bucal de grado médico para protección dental, adecuado para niños y adultos.',
+        price: 5000,
+        age: 'Niños y adultos',
+        size: 'Única',
+        additionalInfo: 'Incluye estuche protector.',
+        pictures: [
+            './assets/productos/2/1.png',
+            './assets/productos/2/2.jpg'
+        ],
+        info: [
+            'El bucal para karate está diseñado para proteger los dientes y la mandíbula de los practicantes durante las sesiones de combate. Su fabricación con material de grado médico garantiza una excelente absorción de impactos y comodidad durante su uso.',
+            'Es adecuado para niños y adultos, adaptándose fácilmente a la forma de la boca para asegurar un ajuste cómodo y seguro. Este bucal es indispensable para prevenir lesiones dentales durante los entrenamientos y competiciones.',
+            'Además, incluye un estuche protector que permite almacenar el bucal de manera higiénica y segura cuando no está en uso, garantizando su durabilidad y limpieza.'
+        ],
+        about: [
+            {
+                text: 'El bucal para karate está diseñado para proteger los dientes y la mandíbula durante los combates. Fabricado con material de grado médico, ofrece una excelente absorción de impactos.'
+            },
+            {
+                text: 'Es adecuado para niños y adultos, y se adapta fácilmente a la forma de la boca para un ajuste cómodo y seguro.'
+            },
+            {
+                text: 'El bucal viene con un estuche protector que permite guardarlo de manera higiénica y segura cuando no está en uso.'
+            }
+        ]
+    },
+    {
+        id: 5,
         title: 'Kategui para Kata',
         description: 'Kategui de alta calidad para kata, ideal para competiciones y entrenamientos formales.',
-        price: 35000,
+        price: 37000,
         age: 'Adultos',
         size: 'Mediano',
+        brand: 'Adidas',
         additionalInfo: 'Tela de alta calidad.',
         pictures: [
-            './assets/productos/4/1.png',
-            './assets/productos/4/2.png',
-            './assets/productos/4/3.png'
+            './assets/productos/4/1.jpg',
+            './assets/productos/4/2.jpg',
+            './assets/productos/4/3.jpg',
+            './assets/productos/4/4.jpg',
+            './assets/productos/4/5.jpg',
+            './assets/productos/4/6.jpg',
+            './assets/productos/4/7.jpg'
         ],
         info: [
             'El kategui para kata está especialmente diseñado para la práctica y competición de kata en karate. Su tela de alta calidad ofrece la resistencia y flexibilidad necesarias para realizar movimientos precisos y fluidos.',
@@ -120,36 +160,6 @@ const products = [
         ]
     },
     {
-        id: 5,
-        title: 'Kategui para Kumite',
-        description: 'Kategui ligero y resistente para kumite, diseñado para máxima movilidad y confort.',
-        price: 34000,
-        age: 'Adultos',
-        size: 'Mediano',
-        additionalInfo: 'Diseñado para alta movilidad.',
-        pictures: [
-            './assets/productos/5/1.png',
-            './assets/productos/5/2.png',
-            './assets/productos/5/3.png'
-        ],
-        info: [
-            'El kategui para kumite está diseñado para ofrecer la máxima movilidad y confort durante los combates. Fabricado con materiales ligeros y resistentes, permite una gran libertad de movimiento y ventilación.',
-            'Es ideal para adultos que participan en competiciones y entrenamientos intensivos, proporcionando un ajuste seguro y cómodo. La tela ligera asegura que el usuario se mantenga fresco y seco durante la práctica.',
-            'Este kategui combina durabilidad y funcionalidad, siendo la opción perfecta para los practicantes de kumite que buscan rendimiento y comodidad en cada entrenamiento o competencia.'
-        ],
-        about: [
-            {
-                text: 'El kategui para kumite está diseñado para ofrecer la máxima movilidad y confort durante los combates. Fabricado con materiales ligeros y resistentes, permite una gran libertad de movimiento y ventilación.'
-            },
-            {
-                text: 'Es ideal para adultos que participan en competiciones y entrenamientos intensivos, proporcionando un ajuste seguro y cómodo.'
-            },
-            {
-                text: 'El diseño permite una excelente transpirabilidad, manteniendo al practicante fresco y seco durante la práctica.'
-            }
-        ]
-    },
-    {
         id: 6,
         title: 'Peto para Karate',
         description: 'Peto de karate para protección avanzada del torso, apto para niños y adultos.',
@@ -158,9 +168,8 @@ const products = [
         size: 'Mediano',
         additionalInfo: 'Protección avanzada.',
         pictures: [
-            './assets/productos/6/1.png',
-            './assets/productos/6/2.png',
-            './assets/productos/6/3.png'
+            './assets/productos/6/1.webp',
+            './assets/productos/6/2.webp'
         ],
         info: [
             'El peto para karate ofrece una protección avanzada para el torso durante los entrenamientos y competiciones. Está diseñado para absorber los impactos y reducir el riesgo de lesiones, proporcionando seguridad y confianza al practicante.',
