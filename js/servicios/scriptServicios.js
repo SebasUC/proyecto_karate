@@ -1,12 +1,6 @@
-const elements = document.querySelectorAll('.main-button')
 const itemContent = document.querySelector('.content-wrapper')
 const itemTitle = document.getElementById('content-title')
 const itemText = document.getElementById('content-text')
-
-function onClick() {
-    const services = document.querySelector('.carousel-block .content')
-    services.scrollIntoView({ behavior: 'smooth' })
-}
 
 function onCarouselSwap(index) {
     itemContent.style.transition = 'opacity 0.2s ease-out'
@@ -49,7 +43,4 @@ function createItems() {
 }
 
 // Crear slides del carousel
-slide(createItems(), 250, 500)
-
-// Al clickear en un botón
-elements.forEach(element => element.addEventListener('click', onClick))
+slide(createItems(), 200, 300)
