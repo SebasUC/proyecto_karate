@@ -6,7 +6,7 @@ body {
         "nav"
         "main"
         "footer";
-    grid-template-rows: 6% auto 10%;
+    grid-template-rows: 6% auto auto;
     background: url('../assets/home/background.jpg');
     background-size: cover;
     background-position: center;
@@ -86,7 +86,7 @@ body {
             "nav"
             "main"
             "footer";
-        grid-template-rows: 7% auto 15%;
+        grid-template-rows: 7% auto auto;
     }
     
     .main {
@@ -102,7 +102,7 @@ body {
             "nav"
             "main"
             "footer";
-        grid-template-rows: 8% auto 300px;
+        grid-template-rows: 8% auto auto;
     }
 
     .main {
