@@ -2,6 +2,24 @@ const itemContent = document.querySelector('.content-wrapper')
 const itemTitle = document.getElementById('content-title')
 const itemText = document.getElementById('content-text')
 
+function createItems() {
+    const items = []
+    for (let i = 0; i < services.length; i++) {
+        const service = services[i]
+        const item = document.createElement('article')
+        item.classList.add('carousel-item')
+    
+        const img = document.createElement('img')
+        img.src = service.img
+        
+        item.appendChild(img)
+        carouselInner.appendChild(item)
+        items.push(item)
+    }
+
+    return items
+}
+
 function onCarouselSwap(index) {
     itemContent.style.transition = 'opacity 0.2s ease-out'
     itemContent.style.opacity = 0
@@ -18,28 +36,6 @@ function updateText(index) {
     
     itemTitle.innerText = service.name
     itemText.innerText = service.description
-}
-
-function createItems() {
-    const items = []
-    for (let i = 0; i < services.length; i++) {
-        const service = services[i]
-        const item = document.createElement('article')
-        item.classList.add('carousel-item')
-
-        const p = document.createElement('p')
-        p.innerText = i
-    
-        const img = document.createElement('img')
-        img.src = service.img
-    
-        item.appendChild(p)
-        item.appendChild(img)
-        carouselInner.appendChild(item)
-        items.push(item)
-    }
-
-    return items
 }
 
 // Crear slides del carousel

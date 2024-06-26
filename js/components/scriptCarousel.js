@@ -32,8 +32,13 @@ function slide(items, slideSize, slideHeight, allowMultipleImagesOnBiggerScreens
     window.addEventListener('resize', calculateSizes)
     carouselInner.addEventListener('transitionend', checkIndex)
 
-    // Actualizar texto
-    updateText(index)
+    /*
+    Actualizar texto
+    Si encuentra la función, la llama (en otro archivo JS)
+    */
+    if (updateText) {
+        updateText(index)
+    }
 
     function calculateSizes() {
         let visibleSlides, 
@@ -44,9 +49,10 @@ function slide(items, slideSize, slideHeight, allowMultipleImagesOnBiggerScreens
         if (!allowMultipleImagesOnBiggerScreens || window.matchMedia('(max-width: 800px)').matches) {
             // Móvil
             visibleSlides = 1
-            carouselInner.style.left = `-${slideSize}px`
 
             firstSlidePosition = -1 * slideSize
+            
+            // El último slide se encuentra en la última posición
             lastSlidePosition = -1 * slideSize * slideLength
         } else {
             // Tablet y PC
@@ -54,12 +60,18 @@ function slide(items, slideSize, slideHeight, allowMultipleImagesOnBiggerScreens
             carouselInner.style.left = '0px'
             
             firstSlidePosition = 0
+            
             // El útlimo slide se encuentra en la penúltima posición (la última muestra la copia del primer elemento)
+            // Esto se hace porque al haber 3 slides visibles se debe colocar en el centro el actual
             lastSlidePosition = -1 * slideSize * (slideLength - 1)
         }
 
+        // Asignar tamaños al carousel para evitar mostrar más de una carta a la vez
         carousel.style.width = `${visibleSlides * slideSize}px`
         carousel.style.height = `${slideHeight}px`
+        
+        // Se coloca en el primer slide
+        carouselInner.style.left = `${firstSlidePosition}px`
         carouselInner.style.height = `${slideHeight}px`
 
         items.forEach(element => {
@@ -99,7 +111,7 @@ function slide(items, slideSize, slideHeight, allowMultipleImagesOnBiggerScreens
             carouselInner.style.left =  lastSlidePosition + 'px'
             index = slideLength - 1
         } else if (index == slideLength) {
-            // Colocar en el primer slide
+            // Colocar en el primer slide cuando se dirija después del último
             carouselInner.style.left = firstSlidePosition + 'px'
             index = 0
         }
