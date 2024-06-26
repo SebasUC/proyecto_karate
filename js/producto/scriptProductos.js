@@ -29,7 +29,8 @@ function loadProduct(productId) {
         const details = [
             { name: 'Edad', value: product.age },
             { name: 'Tamaño', value: product.size },
-            { name: 'Información adicional', value: product.additionalInfo }
+            { name: 'Información adicional', value: product.additionalInfo },
+            { name: 'Marca', value: product.brand || 'Sin especificar' }
         ]
         
         productDetails.innerHTML = '<h4>Detalles</h3>'

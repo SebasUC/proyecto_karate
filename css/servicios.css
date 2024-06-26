@@ -43,10 +43,10 @@ body {
     &:nth-child(even) {
         background-color: #0c0b0b;
         color: #fff;
+    }
 
-        & .button {
-            max-width: 200px;
-        }
+    & a {
+        opacity: 1;
     }
 }
 
