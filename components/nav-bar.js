@@ -13,8 +13,9 @@ template.innerHTML = `
         <ul class="navbar-list">
             <li class="navbar-button"><a class="navbar-link" href="index.html">Inicio</a></li>
             <li class="navbar-button"><a class="navbar-link" href="blog.html">Blog</a></li>
-            <li class="navbar-button"><a class="navbar-link" href="acercaNosotros.html">Nosotros</a></li>
+            <li class="navbar-button"><a class="navbar-link" href="servicios.html">Productos y Servicios</a></li>
             <li class="navbar-button"><a class="navbar-link" href="contacto.html">Contacto</a></li>
+            <li class="navbar-button"><a class="navbar-link" href="acercaNosotros.html">Nosotros</a></li>
             <li class="navbar-button"><a class="navbar-link" href="acercaDe.html">Acerca de</a></li>
             <li class="navbar-button"><a class="navbar-link" href="faq.html">FAQ</a></li>
             <li class="navbar-button"><a class="navbar-link">Cerrar</a></li>
