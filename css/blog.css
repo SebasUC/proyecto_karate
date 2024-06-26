@@ -1,7 +1,8 @@
 @import url('./styles.css');
 @import url('../components/footer.css');
+
 body{
-    grid-template-rows: auto 15vh 1fr 300px;
+    grid-template-rows: auto 15vh 1fr auto;
 }
 
 .header{
@@ -51,7 +52,7 @@ body{
 
 @media(min-width:768px){
     body{
-        grid-template-rows: auto 6% auto 300px;
+        grid-template-rows: auto 6% auto auto;
     }
     
 

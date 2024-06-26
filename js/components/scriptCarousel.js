@@ -3,38 +3,10 @@ const carouselInner = carousel.querySelector('.carousel-inner')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 
-const itemContent = document.querySelector('.content-wrapper')
-const itemTitle = document.getElementById('content-title')
-const itemText = document.getElementById('content-text')
-
-function createItems() {
-    const items = []
-    for (let i = 0; i < services.length; i++) {
-        const service = services[i]
-        const item = document.createElement('article')
-        item.classList.add('carousel-item')
-
-        const p = document.createElement('p')
-        p.innerText = i
-    
-        const img = document.createElement('img')
-        img.src = service.img
-    
-        item.appendChild(p)
-        item.appendChild(img)
-        carouselInner.appendChild(item)
-        items.push(item)
-    }
-
-    return items
-}
-
-function slide(items) {
+function slide(items, slideSize, slideHeight, allowMultipleImagesOnBiggerScreens = true) {
     var {
-        visibleSlides, 
         firstSlidePosition, 
         lastSlidePosition,
-        slideSize,
         slideLength
     } = calculateSizes()
 
@@ -67,10 +39,9 @@ function slide(items) {
         let visibleSlides, 
             firstSlidePosition, 
             lastSlidePosition,
-            slideSize = 250, // 250px de ancho
             slideLength = items.length
 
-        if (window.matchMedia('(max-width: 800px)').matches) {
+        if (!allowMultipleImagesOnBiggerScreens || window.matchMedia('(max-width: 800px)').matches) {
             // Móvil
             visibleSlides = 1
             carouselInner.style.left = `-${slideSize}px`
@@ -88,8 +59,15 @@ function slide(items) {
         }
 
         carousel.style.width = `${visibleSlides * slideSize}px`
+        carousel.style.height = `${slideHeight}px`
+        carouselInner.style.height = `${slideHeight}px`
 
-        return { visibleSlides, firstSlidePosition, lastSlidePosition, slideSize, slideLength }
+        items.forEach(element => {
+            element.style.width = `${slideSize}px`
+            element.style.height = `${slideHeight}px`
+        });
+
+        return { firstSlidePosition, lastSlidePosition, slideSize, slideLength }
     }
 
     function shiftSlide(direction) {
@@ -118,39 +96,19 @@ function slide(items) {
         // Si se mueve hacia atrás del inicio
         if (index == -1) {
             // Colocar en el último slide
-            // carouselInner.style.left = -(slideSize * slideLength) + 'px'
             carouselInner.style.left =  lastSlidePosition + 'px'
             index = slideLength - 1
         } else if (index == slideLength) {
-            // carouselInner.style.left = -(slideSize) + 'px'
+            // Colocar en el primer slide
             carouselInner.style.left = firstSlidePosition + 'px'
             index = 0
         }
 
-        animateContentWrapper(index)
+        // Si encuentra la función, la llama (en otro archivo JS)
+        if (onCarouselSwap) {
+            onCarouselSwap(index)
+        }
 
         allowShifting = true
     }
-
-    function animateContentWrapper(index) {
-        // itemContent.scrollIntoView({ behavior: 'smooth' })
-        itemContent.style.transition = 'opacity 0.2s ease-out'
-        itemContent.style.opacity = 0
-
-        setTimeout(() => {
-            updateText(index)
-            itemContent.style.transition = 'opacity 0.45s ease-in'
-            itemContent.style.opacity = 1
-        }, 150);
-    }
-
-    function updateText(index) {
-        const service = services[index]
-        
-        itemTitle.innerText = service.name
-        itemText.innerText = service.description
-    }
 }
-
-// Slides
-slide(createItems())

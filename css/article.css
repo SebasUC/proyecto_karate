@@ -7,7 +7,7 @@ body {
         "header"
         "main"
         "footer";
-    grid-template-rows: auto 2% auto 300px;
+    grid-template-rows: auto 2% auto auto;
     background: url('../assets/home/background.jpg');
     background-size: cover;
     background-position: center;

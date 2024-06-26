@@ -11,6 +11,7 @@
     <link href="./resources/fontawesome-free-6.5.2-web/css/solid.css" rel="stylesheet" />
 
     <script src="components/nav-bar.js"></script>
+    <script src="components/footer.js"></script>
     <link rel="stylesheet" href="./css/servicios.css">
 </head>
 
@@ -20,6 +21,15 @@
     </div>
 
     <main class="main">
+        <section class="product-block block big-font-size">
+            <h1>Casco</h1>
+            <h4>Duro y de todos tamaños</h4>
+            <a href="./producto.html?id=1"><button class="button main-button pill-shape">Más información</button></a>
+
+            <picture class="product-figure">
+                <img src="./assets/servicios/desktop/casco.png">
+            </picture>
+        </section>
         <section class="product-block block big-font-size">
             <h1>Kategui de Kumite</h1>
             <h4>Cómodo, flexible y resistente</h4>
@@ -59,15 +69,6 @@
             </picture>
         </section>
         <section class="product-block block big-font-size">
-            <h1>Casco</h1>
-            <h4>Duro y de todos tamaños</h4>
-            <button class="button main-button pill-shape">Más información</button>
-
-            <picture class="product-figure">
-                <img src="./assets/servicios/desktop/casco.png">
-            </picture>
-        </section>
-        <section class="product-block block big-font-size">
             <h1>Peto</h1>
             <h4>Duro, flexible y cómodo</h4>
             <button class="button main-button pill-shape">Más información</button>
@@ -102,13 +103,14 @@
 
         <section class="block"></section>
     </main>
+    
     <footer class="footer">
-        <p>Hola</p>
+        <custom-footer></custom-footer>
     </footer>
 
     <script src="./js/data/services.js"></script>
-    <script src="./js/servicios/scriptCarouselServicios.js"></script>
-    <script src="./js/servicios/scriptScroll.js"></script>
+    <script src="./js/components/scriptCarousel.js"></script>
+    <script src="./js/servicios/scriptServicios.js"></script>
 </body>
 
 </html>

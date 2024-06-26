@@ -12,7 +12,7 @@ body {
         "main"
         "footer"
         ;
-    grid-template-rows: auto 1fr 300px;
+    grid-template-rows: auto 1fr auto;
 }
 
 .contact-us {
