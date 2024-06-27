@@ -22,11 +22,6 @@
 .summary {
     text-align: center;
     width: 100%;
-    img{
-        width: 150px;
-        border-radius: 50%;
-        margin: 2%;
-    }
 }
 
 .card-wrapper {
