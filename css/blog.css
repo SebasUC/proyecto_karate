@@ -1,5 +1,4 @@
 @import url('./styles.css');
-@import url('../components/footer.css');
 
 body{
     grid-template-rows: auto 15vh 1fr auto;
